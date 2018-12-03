@@ -21,12 +21,15 @@ for url in urls:
 		nextstr = title.next
 		print(title.string)
 		file.write(title.string+'\n')
-		# body > center > div > center > center:nth-child(3) > table > tbody > tr:nth-child(1) > td:nth-child(8)
+		body > center > div > center > center:nth-child(3) > table > tbody > tr:nth-child(1) > td:nth-child(8)
+		body > center > div > center > center:nth-child(3) > table > tbody > tr:nth-child(3) > td:nth-child(2)
 	table_list = so.find_all('table')
 	for table in table_list[13:14]:
 		tbody_list = table.find_all('tbody')
 		#查找标签tr
 		value_list = table.find_all('tr')
+		print(len(value_list))
+		print(len(value_list))
 		print(len(value_list))
 		
 		#print(value_list[0])
